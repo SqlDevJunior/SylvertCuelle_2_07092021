@@ -6,11 +6,36 @@
 body {
   font-family: "Raleway", sans-serif;
 }
-#content_header{
-  display: flex;
-  justify-content: space-between;
-  
-}
+/*header*/
+
+
 nav{
   display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: cornflowerblue;
 }
+ nav #logo{
+  margin:  50px 0 50px 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+nav #ul_nav{
+  display: flex;
+}
+nav #li_lodging, #li_activity, #li_subscrib{
+  border:2px solid black;
+  background-color: cyan;
+  font-size: 18px;
+  
+  padding: 55px;
+  
+
+  
+}
+a{
+  text-decoration: none;
+
+}
+
