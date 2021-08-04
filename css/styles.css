@@ -6,4 +6,11 @@
 body {
   font-family: "Raleway", sans-serif;
 }
-
+#content_header{
+  display: flex;
+  justify-content: space-between;
+  
+}
+nav{
+  display: flex;
+}
