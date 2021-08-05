@@ -10,13 +10,16 @@ body {
 
 
 nav{
+  
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: cornflowerblue;
+}
+hr{
+  display: none;
 }
  nav #logo{
-  margin:  50px 0 50px 50px;
+  margin:  10px 10px 10px 55px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -25,17 +28,116 @@ nav #ul_nav{
   display: flex;
 }
 nav #li_lodging, #li_activity, #li_subscrib{
-  border:2px solid black;
-  background-color: cyan;
+  border-top:2px solid transparent;
   font-size: 18px;
-  
-  padding: 55px;
-  
-
+  padding: 40px;
   
 }
 a{
   text-decoration: none;
-
+  color:black;
 }
+ a {
+  color:#0065fc;
+}
+#li_lodging:hover{
+  border-top: 2px solid #0065fc;
+  color:blue
+}
+a #li_activity{
+  color:black;
+}
+#li_activity:hover{
+  border-top: 2px solid #0065fc;
+  color:blue
+  
+}
+#li_subscrib:hover{
+  border-top: 2px solid #0065fc;
+  color:#0065fc;
+  
+}
+/* MAIN*/
+main{
+  margin:auto;
+  max-width: 100%;
+}
+/*TITLE*/
+title{
+  margin: auto;
+  max-width: 100%;
+}
+#title1 {
+  font-size: 21px;
+  font-weight: bold;
+  margin: 0px 0px 10px 55px;
+}
+#title2 p{
+  margin-left:55px;
+}
+/*RESPONSIVE*/
+@media screen and (max-width:395px){
+  body{
+    width:100%;
+  }
+  /*HEADER*/
+  #ul_nav{
+  display: flex;
+  flex-wrap: wrap-reverse;
+  justify-content: end;
+  }
+  nav{
+  position: relative;
+  }
+  hr{
+    display: block;
+    color:#f2f2f2
+  }
+  nav #logo{
+  display: flex;
+  position: absolute;
+  align-self: flex-start;
+  margin:5% 10% 0 3%;
+  }
+  nav #lodging{  
+    margin:auto;
+  }
+  nav #li_lodging{
+    padding:10px 40px 10px 40px;
+  }
+  nav #activity{
+    margin:auto;
+  }
+  nav #li_activity{
+    padding:10px 40px 10px 40px;
+  }
+  nav #li_lodging:hover{
+    border-top: none;
+    border-bottom: 2px solid #0065fc;
+  }
+  nav #li_activity:hover{
+    border-top: none;
+    border-bottom: 2px solid #0065fc;
+  }
+  /*TITLE*/
+  title{
+    margin: auto;
+    max-width: 100%;
+  }
+  #title1 {
+    display: flex;
+    margin: 30px 65px 10px 30px;
+    text-align: justify;
+    font-size: 19px;
+    font-weight: bold;
+  }
+  #title2 p{
+  margin-left:30px;
+  }
+}
+  
+
+
+
+
 
