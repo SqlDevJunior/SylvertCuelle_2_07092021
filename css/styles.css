@@ -227,6 +227,7 @@ title{
 aside{
   position: relative;
   display:flex;
+  float: right;
   background-color: cadetblue;
 }
 
