@@ -114,10 +114,19 @@ title{
   padding:0 15px;
  
 }
+/*FILTERS*/
+#filters{
+  margin: 0;
+  max-width:100%;
+}
+#filters_contain{
+  background-color:chocolate;
+  display:flex;
 
+}
 
 /*RESPONSIVE*/
-@media screen and (max-width:395px){
+@media screen and (max-width:375px){
   body{
     width:100%;
   }
@@ -188,8 +197,6 @@ title{
     background-image: url(rechercher.png);
     background-position: center;
     background-repeat: no-repeat;
-    
-    
   }
 
 }
