@@ -4,7 +4,7 @@
   box-sizing: border-box;
 }
 body {
-  font-family: "Raleway", sans-serif;
+  font-family: 'Raleway', sans-serif;
 }
 /*header*/
 
@@ -118,12 +118,118 @@ title{
 #filters{
   margin: 0;
   max-width:100%;
-}
-#filters_contain{
-  background-color:chocolate;
   display:flex;
+  
+}
+#filters_contains{
+  display:flex;
+  margin:33px 0px 43px 55px;
+  
+}
+#filter_title{
+  display: flex;
+  align-items: center;
+  margin-right: 50px;
+  font-size: 18px;
+  font-weight: bold;
+}
+#filter_eco_fam{
+  display: flex;
+}
+#filter_eco, #filter_fam, #filter_rom, #filter_anim{
+  display:flex;
+  border:2px solid #f2f2f2;
+  height: 50px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 25px;
+  font-weight: bold;
+  margin-right: 25px;
+  padding-right: 20px;
+  font-size: 18px;
+}
+#filter_eco{
+  display: flex;
+  
+}
+#icone_eco,#icone_fam,#icone_rom,#icone_anim {
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 25px;
+  background-color: #f2f2f2;
+  height: 50px;
+  width: 50px;
+  color:#0065fc;
+  margin-right: 15px;
+  cursor: pointer;
+  
+}
+#icone_eco:hover{
+  background-color: #0065fc;
+  color:white;
+}
+#icone_fam:hover{
+  background-color: #0065fc;
+  color:white;
+}
+#icone_rom:hover{
+  background-color: #0065fc;
+  color:white;
+}
+#icone_anim:hover{
+  background-color: #0065fc;
+  color:white;
+}
+/*LEGEND*/
+#informations{
+  margin:auto;
+  max-width:100%;
 
 }
+#filter_legend{
+  display: flex;
+  margin:0px 40px 0 55px;
+}
+#legend_icon{
+  color: #0065fc;
+  border: 2px solid #f2f2f2;
+  margin-right: 12px;
+  width: 1.5%;
+  display: flex;
+  justify-content: center;
+  border-radius: 20px;
+  padding: 3px;
+  align-items: center;
+  margin-right: 10px;
+}
+#legend{
+  display:flex;
+  align-items: center;
+}
+/*LODGING POPULAR*/
+#lodging_popular{
+  margin:auto;
+  max-width: 100%;
+}
+#lodging_popular_contain{
+  max-width: 65%;
+  display:flex;
+  background-color: #f2f2f2;
+  margin: 40px 10px 33px 55px;
+  border-radius: 20px;
+}
+#lodging_title{
+  font-size: 18px;
+  font-weight: bold;
+  margin: 45px 0 20px 40px;
+}
+aside{
+  position: relative;
+  display:flex;
+  background-color: cadetblue;
+}
+
 
 /*RESPONSIVE*/
 @media screen and (max-width:375px){
@@ -191,15 +297,64 @@ title{
     display: flex;
     margin:20px;
   }
+  #submit_input{
+    display:flex;
+    margin-right: 10px;
+  }
+  #search_input{
+    width:65%;
+  }
+  #input{
+    display: flex;
+    font-size: 15px;
+  }
+  #button_gps{
+    margin-left:3%;
+  }
   #submit_search{
-    color: transparent;
+    color:transparent;
     width: 50px;
-    background-image: url(rechercher.png);
     background-position: center;
     background-repeat: no-repeat;
+    border-radius: 15px;
+  }
+  /*FILTERS*/
+  #filters_contains{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin: 25px;
+  }
+  #filter_title{
+    margin:0 0 20px 0
+
+  }
+  #filter_fam{
+    display: flex;
+    margin:7px;
+  }
+  #filter_eco_fam{
+    display: flex;
+  }
+  #filter_eco, #filter_rom, #filter_anim{
+    margin:7px 0;
+    font-size: 15px;
+  }
+  /*LEGEND*/
+  #informations{
+    display:flex;
+    margin:auto;
+    max-width: 100%;
+  }
+  #filter_legend{
+    margin:0px 0px 0 20px; 
+  }
+  #legend_icon{
+  width: 40px;
+  }
+    
   }
 
-}
   
 
 
