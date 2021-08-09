@@ -5,6 +5,8 @@
 }
 body {
   font-family: 'Raleway', sans-serif;
+  margin:auto;
+  max-width: 100%;
 }
 /*header*/
 
@@ -348,15 +350,18 @@ title{
 }
 #activity_contain{
   display: flex;
+  width:90%;
   justify-content: space-between;
   height:500px;
-  margin:55px 55px 60px 55px;
-  background-color: coral; 
+  margin:10px 55px 55px 55px;
+  
 }
 #activity_title{
   font-size: 21px;
   font-weight: bold;
-  margin-bottom:55px;
+  margin-top:40px;
+  margin-left:55px;
+  
 }
 #activity_card1{
   height:100%;
@@ -473,6 +478,75 @@ title{
   height: 108px;
   border-radius: 15px 15px 0 0;
 }
+/*FOOTER*/
+footer{
+  display: flex;
+  background-color: #f2f2f2;
+  height: 218px;
+}
+#navigation{
+  display:flex;
+  justify-content: space-around;
+  width: 100%;
+  }
+#a_propos{
+  display:flex;
+  flex-direction: column;
+  align-content: space-between;
+}
+#a_propos_title{
+  font-size: 21px;
+  font-weight: bold;
+  padding: 50px 0px 20px 0px;
+}
+#nav_a_propos{
+  font-weight: normal;
+  display: flex;
+  flex-direction: column;
+}
+#nos_hebergements{
+  display: flex;
+  flex-direction: column;
+  
+}
+#nos_hebergements_title{
+  display: flex;
+  flex-direction: column;
+  align-content: space-between;
+  font-size: 21px;
+  font-weight: bold;
+  padding: 50px 0px 20px 0px;
+}
+#nav_nos_hebergements{
+  font-weight: normal;
+  
+}
+#fonctionnement, #charte, #aide{
+  display: flex;
+  padding-bottom: 20px;
+}
+#conditions, #soumettre, #contact {
+  display: flex;
+  padding-bottom: 20px;
+}
+#assistance{
+  display: flex;
+  flex-direction: column;
+  
+}
+#assistance_title{
+  display: flex;
+  flex-direction: column;
+  align-content: space-between;
+  font-size: 21px;
+  font-weight: bold;
+  padding: 50px 0px 20px 50px;
+}
+#nav_assistance{
+  font-weight: normal;
+  padding-left: 50px;
+}
+
 
 
 /*RESPONSIVE*/
