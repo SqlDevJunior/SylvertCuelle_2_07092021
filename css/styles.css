@@ -26,7 +26,7 @@ hr{
 }
 nav #ul_nav{
   display: flex;
-  margin-right: 75px;
+  margin-right: 55px;
 }
 nav #li_lodging, #li_activity, #li_subscrib{
   border-top:2px solid transparent;
@@ -130,7 +130,7 @@ title{
 #filter_title{
   display: flex;
   align-items: center;
-  margin-right: 50px;
+  margin-right: 55px;
   font-size: 18px;
   font-weight: bold;
 }
@@ -285,7 +285,7 @@ title{
   width: 28%;
   border-radius: 20px;
   margin-top: 40px;
-  margin-right: 75px;
+  margin-right: 55px;
 }
 #popular_title{
   display: inline-block;
@@ -350,7 +350,7 @@ title{
   display: flex;
   justify-content: space-between;
   height:500px;
-  margin:55px 76px 60px 50px;
+  margin:55px 55px 60px 55px;
   background-color: coral; 
 }
 #activity_title{
@@ -359,7 +359,6 @@ title{
   margin-bottom:55px;
 }
 #activity_card1{
-  
   height:100%;
   width: 310px;
   background-color: white;
@@ -414,6 +413,61 @@ title{
   height: 108px;
 }
 #activity_card3_img img{
+  object-fit: cover;
+  width:310px;
+  height: 108px;
+  border-radius: 15px 15px 0 0;
+}
+#activity_card4{
+  
+  height:100%;
+  width: 310px;
+  background-color: white;
+  border-radius: 15px;
+  box-shadow: 6px 10px 7px 5px rgba(237,237,237,1);
+}
+#activity_card4_img{
+  height: 90%;
+  
+}
+#activity_card4_img img{
+  object-fit: cover;
+  width:310px;
+  height: 100%;
+  border-radius: 15px 15px 0 0;
+}
+#activity_card5_card6{
+  display:flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+#activity_card5{
+  height:237px;
+  width: 310px;
+  background-color: white;
+  border-radius: 15px;
+  box-shadow: 6px 10px 7px 5px rgba(237,237,237,1);
+}
+#activity_card5_img{
+  height: 182px;
+}
+#activity_card5_img img{
+  object-fit: cover;
+  width:310px;
+  height: 182px;
+  border-radius: 15px 15px 0 0;
+}
+#activity_card6{
+  height:167px;
+  width: 310px;
+  background-color: white;
+  border-radius: 15px;
+  box-shadow: 6px 10px 7px 5px rgba(237,237,237,1);
+}
+#activity_card6_img{
+  height: 108px;
+}
+#activity_card6_img img{
   object-fit: cover;
   width:310px;
   height: 108px;
