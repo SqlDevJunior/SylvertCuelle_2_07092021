@@ -106,6 +106,7 @@ title{
   color:black;
   font-weight: bold;
 }
+
 #submit_search{
   font-size: 18px;
   background-color: #0065fc;
@@ -115,6 +116,7 @@ title{
   border:none;
   border-radius: 0 15px 15px 0;
   padding:0 15px;
+  cursor: pointer;
  
 }
 /*FILTERS*/
@@ -289,14 +291,19 @@ title{
   margin-top: 40px;
   margin-right: 55px;
 }
+#popular_title_icon{
+  display:flex;
+  margin:40px 0px 30px 0px;
+  justify-content: space-around;
+
+}
 #popular_title{
-  display: inline-block;
-  margin:40px 170px 30px 40px;
+  display: flex;
   font-size: 21px;
   font-weight: bold;
 }
 #popular_icon{
-  display: inline-block;
+  display: flex;
 }
 #popular_card_contain{
   display: flex;
@@ -674,8 +681,68 @@ footer{
   #legend_icon{
   width: 40px;
   }
-    
+  /*LODGING-POPULAR*/
+  #contain_principal{
+    margin: auto;
+    max-width: 100%;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column-reverse;
   }
+  /*POPULAR*/
+  #popular_title{
+    font-size: 21px;
+    font-weight: bold;
+  }
+  #popular_contain{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 580px;
+    background-color: #f2f2f2;
+    border-radius: 20px;
+    margin-top: 40px;
+  }
+  #popular_card_contain {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    height: 503px;
+    margin: 0px 37px 37px 20px;
+  }
+  #lodging_contain {
+    display: inline-block;
+    height: 620px;
+    background-color: #f2f2f2;
+    width: 100%;
+    border-radius: 20px;
+    margin-top: 40px;
+  }
+  #lodging_title {
+   margin: 40px 0 30px 20px;
+  }
+  #activity_contain{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width:100%;
+    justify-content: space-between;
+    height:500px;
+    margin:10px 55px 55px 20px;
+  }
+  footer{
+    display: flex;
+    background-color: #f2f2f2;
+    height: 218px;
+  }
+  #navigation{
+    display:flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 100%;
+    }
+}  
 
   
 
