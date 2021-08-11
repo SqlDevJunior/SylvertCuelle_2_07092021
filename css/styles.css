@@ -6,11 +6,15 @@
 body {
   font-family: 'Raleway', sans-serif;
   margin:auto;
-  max-width: 100%;
+  max-width: 1600px;
 }
 /*header*/
-
-
+h2{
+  font-size: 18px;
+}
+h3{
+  font-size:16px;
+}
 nav{
   
   display: flex;
@@ -36,11 +40,11 @@ nav #li_lodging, #li_activity, #li_subscrib{
   padding: 40px;
   
 }
-a{
+a {
   text-decoration: none;
   color:black;
 }
- a {
+a {
   color:#0065fc;
 }
 #li_lodging:hover{
@@ -63,16 +67,15 @@ a #li_activity{
 /* MAIN*/
 main{
   margin:auto;
-  max-width: 100%;
+  max-width: 1600px;
 }
 /*TITLE*/
 title{
   margin: auto;
-  max-width: 100%;
+  max-width: 1600px;
 }
-#title1 {
+#title1  h1{
   font-size: 21px;
-  font-weight: bold;
   margin: 0px 0px 10px 55px;
 }
 #title2 p{
@@ -81,7 +84,7 @@ title{
 /*SEARCH*/
 #search{
   margin:auto;
-  max-width: 100%;
+  max-width: 1600px;
   display: flex;
   margin: 20px 0px 10px 55px;
 }
@@ -97,9 +100,12 @@ title{
 #search_input{
   display: flex;
   border:1px solid #f2f2f2;
+  max-width:250px;
+  width:100%;
   height:50px;
 }
 #input{
+  width:100%;
   border: none;
   font-size: 18px;
   padding-left: 10px;
@@ -121,13 +127,14 @@ title{
 }
 /*FILTERS*/
 #filters{
-  margin: 0;
-  max-width:100%;
+  margin: auto;
+  max-width:1600px;
   display:flex;
   
 }
 #filters_contains{
   display:flex;
+  flex-wrap: wrap;
   margin:33px 0px 43px 55px;
   
 }
@@ -135,8 +142,9 @@ title{
   display: flex;
   align-items: center;
   margin-right: 55px;
+}
+#filter_title h2{
   font-size: 18px;
-  font-weight: bold;
 }
 #filter_eco_fam{
   display: flex;
@@ -200,7 +208,8 @@ title{
   color: #0065fc;
   border: 2px solid #f2f2f2;
   margin-right: 12px;
-  width: 1.5%;
+  width: 30px;
+  height:30px;
   display: flex;
   justify-content: center;
   border-radius: 20px;
@@ -214,9 +223,12 @@ title{
 }
 /*LODGING POPULAR*/
 /*LODGING*/
+#lodging_title h2{
+  font-size: 18px;
+}
 #contain_principal{
   margin: auto;
-  max-width: 100%;
+  max-width: 1600px;
   display: flex;
   justify-content: space-around;
 }
@@ -232,9 +244,7 @@ title{
 
 #lodging_title{
   margin:40px 0 30px 40px;
-  font-size: 21px;
-  font-weight: bold;
-}
+  }
 
 #lodging_card_contain{
   display: flex;
@@ -352,7 +362,7 @@ title{
 /*ACTIVITY*/
 #activity{
   margin:auto;
-  max-width: 100%;
+  max-width: 1600px;
   
 }
 #activity_contain{
@@ -487,9 +497,10 @@ title{
 }
 /*FOOTER*/
 footer{
+  margin:auto;
   display: flex;
   background-color: #f2f2f2;
-  height: 218px;
+
 }
 #navigation{
   display:flex;
@@ -511,7 +522,7 @@ footer{
   display: flex;
   flex-direction: column;
 }
-#nos_hebergements{
+#nos_hebergements {
   display: flex;
   flex-direction: column;
   
@@ -526,11 +537,12 @@ footer{
 }
 #nav_nos_hebergements{
   font-weight: normal;
-  
 }
-#fonctionnement, #charte, #aide{
+ 
+#fonctionnement , #charte, #aide{
   display: flex;
   padding-bottom: 20px;
+  
 }
 #conditions, #soumettre, #contact {
   display: flex;
@@ -566,35 +578,57 @@ footer{
     margin-right: 0px;
   }
   #ul_nav{
-  display: flex;
+  width:100%;
   flex-wrap: wrap-reverse;
   justify-content: end;
-  margin-right: 0px;
+  margin-top: 80px;
+  
+  }
+  #li_subscrib{
+    position: absolute;
+    right: 10px;
+    top:0;
+    padding:0px;
   }
   nav{
   position: relative;
   }
-  hr{
-    display: block;
-    color:#f2f2f2
-  }
+  
   nav #logo{
   display: flex;
   position: absolute;
   align-self: flex-start;
   margin:5% 10% 0 3%;
   }
+  #lodging, #activity{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 50%;
+    text-align: center;
+  }
   nav #lodging{  
     margin:auto;
   }
   nav #li_lodging{
     padding:10px 40px 10px 40px;
+    border-bottom: 3px solid #f2f2f2;
+    width:100%;
+    
   }
+  
   nav #activity{
     margin:auto;
   }
+  nav #li_lodging, #li_activity{ 
+    padding-bottom:10px;
+  }
   nav #li_activity{
     padding:10px 40px 10px 40px;
+    border-bottom: 3px solid #f2f2f2;
+    width:100%;
+
   }
   nav #li_lodging:hover{
     border-top: none;
@@ -604,16 +638,26 @@ footer{
     border-top: none;
     border-bottom: 2px solid #0065fc;
   }
+  #subscrib{
+    position:absolute;
+    right: 0px;
+    top:35px;
+  }
+  
   /*TITLE*/
-  title{
+  #title_header{
     margin: auto;
     max-width: 100%;
+    display: flex;
+     
   }
   #title1 {
     display: flex;
-    margin: 30px 65px 10px 30px;
-    text-align: justify;
-    font-size: 19px;
+    margin-top:35px;
+    margin-right: 25px;
+    text-align:justify ;
+    justify-content: center;
+    font-size: 18px;
     font-weight: bold;
   }
   #title2 p{
@@ -722,19 +766,24 @@ footer{
   #lodging_title {
    margin: 40px 0 30px 20px;
   }
-  #activity_contain{
+  /*activity*/
+  #activity{
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
+  }
+  #activity_contain{
+    display: flex;
+    flex-wrap: wrap;
     width:100%;
-    justify-content: space-between;
-    height:500px;
-    margin:10px 55px 55px 20px;
+    margin-left:20px;
+    margin-top:20px;
+    
   }
   footer{
     display: flex;
     background-color: #f2f2f2;
-    height: 218px;
+    
   }
   #navigation{
     display:flex;
