@@ -125,6 +125,9 @@ title{
   cursor: pointer;
  
 }
+#submit_input_respons{
+  display:none;
+}
 /*FILTERS*/
 #filters{
   margin: auto;
@@ -360,12 +363,12 @@ title{
   padding-top:45px;
 }
 /*ACTIVITY*/
-#activity{
+#activityMars{
   margin:auto;
   max-width: 1600px;
   
 }
-#activity_contain{
+#activityMars_contain{
   display: flex;
   width:90%;
   justify-content: space-between;
@@ -373,74 +376,74 @@ title{
   margin:10px 55px 55px 55px;
   
 }
-#activity_title{
+#activityMars_title{
   font-size: 21px;
   font-weight: bold;
   margin-top:40px;
   margin-left:55px;
   
 }
-#activity_card1{
+#activityMars_card1{
   height:100%;
   width: 310px;
   background-color: white;
   border-radius: 15px;
   box-shadow: 6px 10px 7px 5px rgba(237,237,237,1);
 }
-#activity_card1_img{
+#activityMars_card1_img{
   height: 90%;
   
 }
-#activity_card1_img img{
+#activityMars_card1_img img{
   object-fit: cover;
   width:310px;
   height: 100%;
   border-radius: 15px 15px 0 0;
 }
-#activity_card1_text{
+#activityMars_card1_text{
   font-size: 18px;
   font-weight: bold;
   padding-left: 20px;
   padding-top: 15px;
 }
-#activity_card2_card3{
+#activityMars_card2_card3{
   display:flex;
   flex-direction: column;
   justify-content: space-between;
 }
-#activity_card2{
+#activityMars_card2{
   height:237px;
   width: 310px;
   background-color: white;
   border-radius: 15px;
   box-shadow: 6px 10px 7px 5px rgba(237,237,237,1);
 }
-#activity_card2_img{
+#activityMars_card2_img{
   height: 182px;
 }
-#activity_card2_img img{
+#activityMars_card2_img img{
   object-fit: cover;
   width:310px;
   height: 182px;
   border-radius: 15px 15px 0 0;
 }
-#activity_card3{
+#activityMars_card3{
   height:167px;
   width: 310px;
   background-color: white;
   border-radius: 15px;
   box-shadow: 6px 10px 7px 5px rgba(237,237,237,1);
 }
-#activity_card3_img{
+#activityMars_card3_img{
   height: 108px;
 }
-#activity_card3_img img{
+#activityMars_card3_img img{
   object-fit: cover;
   width:310px;
   height: 108px;
   border-radius: 15px 15px 0 0;
 }
-#activity_card4{
+#activityMars_card4{
   
   height:100%;
   width: 310px;
@@ -448,48 +451,48 @@ title{
   border-radius: 15px;
   box-shadow: 6px 10px 7px 5px rgba(237,237,237,1);
 }
-#activity_card4_img{
+#activityMars_card4_img{
   height: 90%;
   
 }
-#activity_card4_img img{
+#activityMars_card4_img img{
   object-fit: cover;
   width:310px;
   height: 100%;
   border-radius: 15px 15px 0 0;
 }
-#activity_card5_card6{
+#activityMars_card5_card6{
   display:flex;
   flex-direction: column;
   justify-content: space-between;
 }
-#activity_card5{
+#activityMars_card5{
   height:237px;
   width: 310px;
   background-color: white;
   border-radius: 15px;
   box-shadow: 6px 10px 7px 5px rgba(237,237,237,1);
 }
-#activity_card5_img{
+#activityMars_card5_img{
   height: 182px;
 }
-#activity_card5_img img{
+#activityMars_card5_img img{
   object-fit: cover;
   width:310px;
   height: 182px;
   border-radius: 15px 15px 0 0;
 }
-#activity_card6{
+#activityMars_card6{
   height:167px;
   width: 310px;
   background-color: white;
   border-radius: 15px;
   box-shadow: 6px 10px 7px 5px rgba(237,237,237,1);
 }
-#activity_card6_img{
+#activityMars_card6_img{
   height: 108px;
 }
-#activity_card6_img img{
+#activityMars_card6_img img{
   object-fit: cover;
   width:310px;
   height: 108px;
@@ -569,6 +572,8 @@ footer{
 
 
 /*RESPONSIVE*/
+
+
 @media screen and (max-width:375px){
   body{
     width:100%;
@@ -576,6 +581,14 @@ footer{
   /*HEADER*/
   nav #ul_nav{
     margin-right: 0px;
+    width:100%;
+  }
+  #activity{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    height: 100%;
+    width: 50%;
   }
   #ul_nav{
   width:100%;
@@ -617,9 +630,9 @@ footer{
     width:100%;
     
   }
-  
   nav #activity{
     margin:auto;
+    width:50%;
   }
   nav #li_lodging, #li_activity{ 
     padding-bottom:10px;
@@ -630,19 +643,25 @@ footer{
     width:100%;
 
   }
-  nav #li_lodging:hover{
-    border-top: none;
+  #li_lodging:hover{
+    border-top: 0;
     border-bottom: 2px solid #0065fc;
+    color:blue
   }
-  nav #li_activity:hover{
-    border-top: none;
+  #li_activity:hover{
+    border-top:0;
     border-bottom: 2px solid #0065fc;
+    color:blue;
   }
   #subscrib{
     position:absolute;
     right: 0px;
     top:35px;
   }
+  #subscrib :hover{
+    border-top: 2px solid #0065fc;
+  }
+  
   
   /*TITLE*/
   #title_header{
@@ -650,6 +669,9 @@ footer{
     max-width: 100%;
     display: flex;
      
+  }
+  #title1 h1{
+    margin:0 25px 10px 30px;
   }
   #title1 {
     display: flex;
@@ -660,8 +682,12 @@ footer{
     font-size: 18px;
     font-weight: bold;
   }
+  #title2 {
+    width:100%;
+  
+  }
   #title2 p{
-  margin-left:30px;
+    margin-left: 30px;
   }
   /*SEARCH*/
   #search{
@@ -684,12 +710,24 @@ footer{
   #button_gps{
     margin-left:3%;
   }
+  #submit_input_respons{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #0065fc;
+  color:white;
+  font-weight: bold;
+  width: 50px;
+  height: 50px;
+  border:none;
+  border-radius: 0 15px 15px 0;
+  cursor: pointer;
+  }
+  #submit_input{
+    margin:0;
+  }
   #submit_search{
-    color:transparent;
-    width: 50px;
-    background-position: center;
-    background-repeat: no-repeat;
-    border-radius: 15px;
+    display:none;
   }
   /*FILTERS*/
   #filters_contains{
@@ -733,6 +771,32 @@ footer{
     justify-content: space-around;
     flex-direction: column-reverse;
   }
+  #lodging_contain{
+      display: inline-block;
+      background-color: #f2f2f2;
+      width: 100%;
+      border-radius: 20px;
+      margin-top: 40px;
+      height:1400px;
+  }
+  #lodging_card_contain{
+    margin:0px 10px 104px 10px;
+  }
+  #lodging_card1, #lodging_card2, #lodging_card3, #lodging_card4, #lodging_card5, #lodging_card6 {
+    width: 100%;
+    height: 195px;
+    background-color: white;
+    border-radius: 15px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+  }
+  #lodging_card_img1 img, #lodging_card_img2 img, #lodging_card_img3 img, #lodging_card_img4 img, #lodging_card_img5 img, #lodging_card_img6 img {
+    width: 95%;
+    object-fit: cover;
+    margin-top: 5px;
+    border-radius: 15px 15px 0 0;
+  }
+ 
   /*POPULAR*/
   #popular_title{
     font-size: 21px;
@@ -744,7 +808,6 @@ footer{
     width: 100%;
     height: 580px;
     background-color: #f2f2f2;
-    border-radius: 20px;
     margin-top: 40px;
   }
   #popular_card_contain {
@@ -753,33 +816,58 @@ footer{
     flex-wrap: wrap;
     justify-content: space-between;
     height: 503px;
-    margin: 0px 37px 37px 20px;
+    margin: 0px 37px 37px 10px;
   }
-  #lodging_contain {
-    display: inline-block;
-    height: 620px;
-    background-color: #f2f2f2;
-    width: 100%;
-    border-radius: 20px;
-    margin-top: 40px;
-  }
+ 
   #lodging_title {
    margin: 40px 0 30px 20px;
   }
   /*activity*/
-  #activity{
+  #activityMars_title{
+    margin-left: 20px;
+  }
+  #activityMars{
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
+    height: 100%;
+    width:100%;
+    
+    
+    
   }
-  #activity_contain{
+  #activityMars_contain{
     display: flex;
     flex-wrap: wrap;
     width:100%;
-    margin-left:20px;
+    margin-left:10px;
     margin-top:20px;
+    margin-right: 10px;
+    justify-content: space-between;
     
   }
+  #activityMars_card1_img img{
+    width: 95%;
+  } 
+  #activityMars_card2_img img{
+    width: 95%;
+  }
+  #activityMars_card3_img img{
+    width: 95%;
+  }
+  #activityMars_card4_img img{
+    width: 95%;
+  } 
+  #activityMars_card5_img img{
+    width: 95%;
+  }
+  #activityMars_card6_img img{
+    width: 95%;
+  }
+  #activityMars_card1{
+    width:100%;
+  }
+  
   footer{
     display: flex;
     background-color: #f2f2f2;
