@@ -572,6 +572,92 @@ footer{
 
 
 /*RESPONSIVE*/
+@media  screen and (min-width:768px) and (max-width:1024px){
+  nav #ul_nav{
+    margin-right: 0px;
+  }
+  #search{
+    display:flex;
+    justify-content: center;
+  }
+  #filter_eco_fam{
+    margin-bottom: 15px;
+  }
+  #contain_principal{
+    display: flex;
+    flex-direction:row-reverse;
+    flex-wrap: wrap;
+    width: 100%;
+  }
+  #lodging_contain{
+    display:flex;
+    flex-direction:row;
+    flex-wrap: wrap;
+    width: 100%;
+    flex-grow: 1;
+    flex-shrink: 1;
+
+  }
+  
+  #lodging_card1, #lodging_card2, #lodging_card3, #lodging_card4, #lodging_card5, #lodging_card6{
+    width:198px;
+    flex-wrap: wrap;
+    
+  }
+  #lodging_card_img1 img, #lodging_card_img2 img, #lodging_card_img3 img, #lodging_card_img4 img, #lodging_card_img5 img, #lodging_card_img6 img{
+    object-fit: cover;
+    width:95%
+  }
+  #popular_title_icon {
+    display: flex;
+    margin: 39px 40px 30px 20px;
+    justify-content: space-between;
+    width: 100%;
+}
+  #popular_contain{
+    display:flex;
+    flex-direction:row;
+    flex-wrap: wrap;
+    width: 100%;
+    margin-right:0;
+    height: 386px;
+
+  }
+  #popular_card_contain{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 100%;
+    height: 380px;
+    margin:0
+    
+  }
+  #popular_card1, #popular_card2{
+    display: initial;
+    width:30%;
+    height:250px
+  }
+  #popular_card3{
+    display: inline-block;
+    width:100%;
+    height:250px
+  }
+  #popular_card_img1 img{
+    width:100%;
+  }
+  #popular_card_img2 img{
+    width:100%;
+  }
+  #popular_card_img3 img{
+    width:100%;
+  }
+  #popular_car_star1{
+    padding-top:0px;
+  }
+    
+}
+  
 
 
 @media screen and (max-width:375px){
@@ -658,10 +744,7 @@ footer{
     right: 0px;
     top:35px;
   }
-  #subscrib :hover{
-    border-top: 2px solid #0065fc;
-  }
-  
+ 
   
   /*TITLE*/
   #title_header{
@@ -869,6 +952,20 @@ footer{
     align-items: center;
     
   }
+  nav #a_propos{
+    font-weight: normal;
+    display: flex;
+    flex-direction: column;
+  
+  }
+  #fonctionnement, #charte, #aide, #données{
+    display: flex;
+    justify-content: center;
+  }
+  #conditions, #soumettre, #contact{
+    display: flex;
+    justify-content: center;
+  }
   #a_propos{
     display: flex;
     justify-content: center;
@@ -889,18 +986,18 @@ footer{
     justify-content: center;
     margin-top:20px;
     }
-    #assistance_title{
-      display: inline-block;
-      justify-content: center;
-      align-items: center;
-      padding:0;
-    }
-    #nav_assistance{
-     display: inline-block;
-     justify-content: center;
-      align-items: center;
-      padding-top: 10px;
-      padding-left: 0;
+  #assistance_title{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding:0;
+  }
+  #nav_assistance{
+    display: inline-block;
+    justify-content: center;
+    align-items: center;
+    padding-top: 10px;
+    padding-left: 0;
     }
   
 }  
