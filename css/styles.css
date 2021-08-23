@@ -226,27 +226,23 @@ title{
 }
 /*LODGING POPULAR*/
 /*LODGING*/
-article{
+#contain_principal{
   max-width: 1600px;
   margin:auto;
+  display: flex;
+  justify-content: space-around;
 }
 #lodging_title h2{
   font-size: 18px;
 }
-#contain_principal{
-  margin: auto;
-  max-width: 1600px;
-  display: flex;
- justify-content: space-between;
-}
+
 
 #lodging_contain{
   display: inline-block;
-  height: 620px;
   background-color:#f2f2f2;
   width: 60%;
   border-radius: 20px;
-  margin-top: 40px;
+  margin-top: 2.5%;
 }
 
 #lodging_title{
@@ -255,15 +251,39 @@ article{
 
 #lodging_card_contain{
   display: flex;
-  margin:0px 37px 104px 37px;
+  margin:0px 37px 10px 37px;
   justify-content: space-between;
   flex-wrap: wrap;
 }
 #lodging_card1, #lodging_card2, #lodging_card3, #lodging_card4, #lodging_card5, #lodging_card6{
   width: 30%;
-  height: 195px;
+ 
   background-color: white;
   border-radius: 15px;
+}
+#lodging_card1:hover{
+  cursor: pointer;
+  transform: scale(1.1);
+}
+#lodging_card2:hover{
+  cursor: pointer;
+  transform: scale(1.1);
+}
+#lodging_card3:hover{
+  cursor: pointer;
+  transform: scale(1.1);
+}
+#lodging_card4:hover{
+  cursor: pointer;
+  transform: scale(1.1);
+}
+#lodging_card5:hover{
+  cursor: pointer;
+  transform: scale(1.1);
+}
+#lodging_card6:hover{
+  cursor: pointer;
+  transform: scale(1.1);
 }
 #lodging_card4, #lodging_card5, #lodging_card6{
   margin-top: 25px;
@@ -305,6 +325,7 @@ article{
   border-radius: 20px;
   margin-top: 40px;
   
+  
 }
 #popular_title_icon{
   display:flex;
@@ -327,7 +348,6 @@ article{
   justify-content:space-between;
   width: 90%;
   margin: auto;
- 
   
 }
 #popular_card1, #popular_card2, #popular_card3{
@@ -336,15 +356,27 @@ article{
   border-radius: 15px;
   box-shadow: 7px 17px 8px 5px rgba(237,237,237,1);
   margin-bottom: 5%;
-  
-  
 }
+#popular_card1:hover{
+  cursor:pointer;
+  transform: scale(1.1);
+}
+#popular_card2:hover{
+  cursor:pointer;
+  transform: scale(1.1);
+}
+#popular_card3:hover{
+  cursor:pointer;
+  transform: scale(1.1);
+}
+
 #popular_card_img1, #popular_card_img2, #popular_card_img3 {
   width:30%;
+  height: 136px;
 }
 #popular_card_img1 img, #popular_card_img2 img, #popular_card_img3 img{
   width:100%;
-  height: 136px;
+  height: 100%;
   object-fit: cover;
   border-radius: 15px 0 0 15px;
   
@@ -378,15 +410,11 @@ article{
 .popular_card_text1{
   display: flex;
   font-weight: bold;
-  padding-top: 10px;
-  padding-left: 10px;
   font-size: 16px;
 }
 .popular_card_text2{
   display: flex;
   font-weight: normal;
-  padding-top: 10px;
-  padding-left: 10px;
   font-size: 16px;
   
 }
@@ -395,13 +423,14 @@ article{
 #activityMars{
   margin:auto;
   max-width: 1600px;
+  display: flex;
+  flex-direction: column;
   
 }
 #activityMars_contain{
   display: flex;
-  width:90%;
   justify-content: space-between;
-  height:500px;
+  height:447px;
   margin:10px 55px 55px 55px;
   
 }
@@ -409,23 +438,28 @@ article{
   font-size: 21px;
   font-weight: bold;
   margin-top:40px;
-  margin-left:55px;
+  display: flex;
+  padding-left: 55px;
   
 }
 #activityMars_card1{
-  height:100%;
-  width: 310px;
+  width: 21%;
   background-color: white;
   border-radius: 15px;
   box-shadow: 6px 10px 7px 5px rgba(237,237,237,1);
 }
+#activityMars_card1:hover{
+  cursor:pointer;
+  transform: scale(1.1);
+}
 #activityMars_card1_img{
-  height: 90%;
+  height: 85%;
+  width: 100%;
   
 }
 #activityMars_card1_img img{
   object-fit: cover;
-  width:310px;
+  width:100%;
   height: 100%;
   border-radius: 15px 15px 0 0;
 }
@@ -438,46 +472,57 @@ article{
   display:flex;
   flex-direction: column;
   justify-content: space-between;
+  width: 21%;
+ 
 }
 #activityMars_card2{
-  height:237px;
-  width: 310px;
+  height:54%;
+  width: 100%;
   background-color: white;
   border-radius: 15px;
   box-shadow: 6px 10px 7px 5px rgba(237,237,237,1);
 }
+#activityMars_card2:hover{
+  cursor:pointer;
+  transform: scale(1.1);
+}
 #activityMars_card2_img{
-  height: 182px;
+  height: 85%;
 }
 #activityMars_card2_img img{
   object-fit: cover;
-  width:310px;
-  height: 182px;
+  width:100%;
+  height: 90%;
   border-radius: 15px 15px 0 0;
 }
 #activityMars_card3{
-  height:167px;
-  width: 310px;
+  height:35%;
   background-color: white;
   border-radius: 15px;
   box-shadow: 6px 10px 7px 5px rgba(237,237,237,1);
 }
+#activityMars_card3:hover{
+  cursor:pointer;
+  transform: scale(1.1);
+}
 #activityMars_card3_img{
-  height: 108px;
+  height: 88%;
 }
 #activityMars_card3_img img{
   object-fit: cover;
-  width:310px;
-  height: 108px;
+  width:100%;
+  height: 70%;
   border-radius: 15px 15px 0 0;
 }
 #activityMars_card4{
-  
-  height:100%;
-  width: 310px;
+  width: 20%;
   background-color: white;
   border-radius: 15px;
   box-shadow: 6px 10px 7px 5px rgba(237,237,237,1);
+}
+#activityMars_card4:hover{
+  cursor:pointer;
+  transform: scale(1.1);
 }
 #activityMars_card4_img{
   height: 90%;
@@ -485,45 +530,57 @@ article{
 }
 #activityMars_card4_img img{
   object-fit: cover;
-  width:310px;
-  height: 100%;
+  width:100%;
+  height: 95%;
   border-radius: 15px 15px 0 0;
 }
 #activityMars_card5_card6{
   display:flex;
   flex-direction: column;
+  height: 100%;
   justify-content: space-between;
+  width:20%;
+ 
+  
 }
 #activityMars_card5{
-  height:237px;
-  width: 310px;
+  height:43%;
+  width: 100%;
   background-color: white;
   border-radius: 15px;
   box-shadow: 6px 10px 7px 5px rgba(237,237,237,1);
 }
+#activityMars_card5:hover{
+  cursor:pointer;
+  transform: scale(1.1);
+}
 #activityMars_card5_img{
-  height: 182px;
+  height: 80%;
 }
 #activityMars_card5_img img{
   object-fit: cover;
-  width:310px;
-  height: 182px;
+  height: 88%;
+  width: 100%;
   border-radius: 15px 15px 0 0;
 }
 #activityMars_card6{
-  height:167px;
-  width: 310px;
+  height: 46%;
+  width: 100%;
   background-color: white;
   border-radius: 15px;
   box-shadow: 6px 10px 7px 5px rgba(237,237,237,1);
 }
+#activityMars_card6:hover{
+  cursor:pointer;
+  transform: scale(1.1);
+}
 #activityMars_card6_img{
-  height: 108px;
+  height: 80%;
 }
 #activityMars_card6_img img{
   object-fit: cover;
-  width:310px;
-  height: 108px;
+  width:100%;
+  height: 88%;
   border-radius: 15px 15px 0 0;
 }
 /*FOOTER*/
