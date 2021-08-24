@@ -337,6 +337,7 @@ title{
   display: flex;
   font-size: 21px;
   font-weight: bold;
+  
 }
 #popular_icon{
   display: flex;
@@ -411,6 +412,7 @@ title{
   display: flex;
   font-weight: bold;
   font-size: 16px;
+
 }
 .popular_card_text2{
   display: flex;
@@ -464,8 +466,11 @@ title{
   border-radius: 15px 15px 0 0;
 }
 #activityMars_card1_text{
+  display: flex;
   font-size: 18px;
   font-weight: bold;
+  padding-left: 10px;
+  
  
 }
 #activityMars_card2_card3{
