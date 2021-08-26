@@ -329,8 +329,9 @@ title{
 }
 #popular_title_icon{
   display:flex;
-  margin:40px 0px 30px 0px;
-  justify-content: space-around;
+  width:90%;
+  margin:40px auto 40px auto;
+  justify-content: space-between;
 
 }
 #popular_title{
@@ -436,6 +437,7 @@ title{
   margin:10px 55px 55px 55px;
   
 }
+
 #activityMars_title{
   font-size: 21px;
   font-weight: bold;
@@ -446,16 +448,18 @@ title{
 }
 #activityMars_card1{
   width: 21%;
+  height: 100%;
   background-color: white;
   border-radius: 15px;
   box-shadow: 6px 10px 7px 5px rgba(237,237,237,1);
+
 }
 #activityMars_card1:hover{
   cursor:pointer;
   transform: scale(1.1);
 }
 #activityMars_card1_img{
-  height: 85%;
+  height: 87%;
   width: 100%;
   
 }
@@ -470,6 +474,8 @@ title{
   font-size: 18px;
   font-weight: bold;
   padding-left: 10px;
+  height: 13%;
+  align-items: center;
   
  
 }
@@ -492,13 +498,20 @@ title{
   transform: scale(1.1);
 }
 #activityMars_card2_img{
-  height: 85%;
+  height: 75%;
 }
 #activityMars_card2_img img{
   object-fit: cover;
   width:100%;
-  height: 90%;
+  height: 100%;
   border-radius: 15px 15px 0 0;
+}
+#activityMars_card2_text{
+  height:25%;
+  display:flex;
+  align-items: center;
+  padding-left: 10px;
+
 }
 #activityMars_card3{
   height:35%;
@@ -511,16 +524,23 @@ title{
   transform: scale(1.1);
 }
 #activityMars_card3_img{
-  height: 88%;
+  height: 65%;
 }
 #activityMars_card3_img img{
   object-fit: cover;
   width:100%;
-  height: 70%;
+  height: 100%;
   border-radius: 15px 15px 0 0;
+}
+#activityMars_card3_text{
+  height: 35%;
+  display:flex;
+  align-items: center;
+  padding-left: 10px;
 }
 #activityMars_card4{
   width: 20%;
+  height: 100%;
   background-color: white;
   border-radius: 15px;
   box-shadow: 6px 10px 7px 5px rgba(237,237,237,1);
@@ -530,14 +550,20 @@ title{
   transform: scale(1.1);
 }
 #activityMars_card4_img{
-  height: 90%;
+  height: 87%;
   
 }
 #activityMars_card4_img img{
   object-fit: cover;
   width:100%;
-  height: 95%;
+  height: 100%;
   border-radius: 15px 15px 0 0;
+}
+#activityMars_card4_text{
+  display: flex;
+  align-items: center;
+  height: 13%;
+  padding-left: 10px;
 }
 #activityMars_card5_card6{
   display:flex;
@@ -546,7 +572,6 @@ title{
   justify-content: space-between;
   width:20%;
  
-  
 }
 #activityMars_card5{
   height:43%;
@@ -560,13 +585,19 @@ title{
   transform: scale(1.1);
 }
 #activityMars_card5_img{
-  height: 80%;
+  height: 68%;
 }
 #activityMars_card5_img img{
   object-fit: cover;
-  height: 88%;
+  height: 100%;
   width: 100%;
   border-radius: 15px 15px 0 0;
+}
+#activityMars_card5_text{
+  height: 32%;
+  display: flex;
+  align-items: center;
+  padding-left: 10px;
 }
 #activityMars_card6{
   height: 46%;
@@ -580,14 +611,21 @@ title{
   transform: scale(1.1);
 }
 #activityMars_card6_img{
-  height: 80%;
+  height: 70%;
 }
 #activityMars_card6_img img{
   object-fit: cover;
   width:100%;
-  height: 88%;
+  height: 100%;
   border-radius: 15px 15px 0 0;
 }
+#activityMars_card6_text{
+  height: 30%;
+  display: flex;
+  align-items: center;
+  padding-left: 10px;
+}
+
 /*FOOTER*/
 footer{
   margin:auto;
@@ -604,20 +642,23 @@ footer{
   display:flex;
   flex-direction: column;
   align-content: space-between;
+  padding-top: 40px;
 }
 #a_propos_title{
   font-size: 21px;
   font-weight: bold;
-  padding: 50px 0px 20px 0px;
+  
 }
 #nav_a_propos{
   font-weight: normal;
   display: flex;
   flex-direction: column;
+  padding-top: 40px;
 }
 #nos_hebergements {
   display: flex;
   flex-direction: column;
+  padding-top: 40px;
   
 }
 #nos_hebergements_title{
@@ -626,10 +667,11 @@ footer{
   align-content: space-between;
   font-size: 21px;
   font-weight: bold;
-  padding: 50px 0px 20px 0px;
+  
 }
 #nav_nos_hebergements{
   font-weight: normal;
+  padding-top: 40px;
 }
  
 #fonctionnement , #charte, #aide{
@@ -644,6 +686,7 @@ footer{
 #assistance{
   display: flex;
   flex-direction: column;
+  padding-top: 40px;
   
 }
 #assistance_title{
@@ -652,11 +695,12 @@ footer{
   align-content: space-between;
   font-size: 21px;
   font-weight: bold;
-  padding: 50px 0px 20px 50px;
+  
 }
 #nav_assistance{
   font-weight: normal;
-  padding-left: 50px;
+  
+  padding-top: 40px;
 }
 
 
