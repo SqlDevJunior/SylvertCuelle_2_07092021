@@ -216,7 +216,6 @@ title{
   display: flex;
   justify-content: center;
   border-radius: 20px;
-  padding: 3px;
   align-items: center;
   margin-right: 10px;
 }
@@ -259,6 +258,7 @@ title{
   width: 30%;
   background-color: white;
   border-radius: 15px;
+  padding: 5px;
 }
 #lodging_card1:hover{
   cursor: pointer;
@@ -995,12 +995,7 @@ footer{
     display:none;
   }
   /*FILTERS*/
-  /*#filters_contains{
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    margin: 25px;
-  }*/
+  
   #filter_title{
     margin:0 0 20px 0;
     width:100%;
@@ -1010,6 +1005,7 @@ footer{
     display: flex;
     margin:7px 0;
     font-size: 15px;
+    margin-left: 10px;
   }
   /*LEGEND*/
   #informations{
@@ -1324,6 +1320,9 @@ footer{
     width: 100%;
     align-items: center;
     }
+    #nav_nos_hebergements {
+      font-weight: normal;
+      padding-top: 40px;
   #assistance{
     display:flex;
     flex-direction: column;
@@ -1336,6 +1335,7 @@ footer{
     justify-content: center;
     align-items: center;
     padding:0;
+    padding-bottom: 10px;
   }
   #nav_assistance{
     display: inline-block;
@@ -1343,6 +1343,7 @@ footer{
     align-items: center;
     padding-top: 10px;
     padding-left: 0;
+   
     }
   
   }

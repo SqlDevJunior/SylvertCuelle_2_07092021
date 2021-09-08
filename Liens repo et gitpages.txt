@@ -1,0 +1,8 @@
+bonjour,
+
+vous trouverez ci-joint les liens pour la validation du P2 reservia
+
+liens vers repository:
+https://github.com/SqlDevJunior/SylvertCuelle_2_07092021
+
+lien vers GitPages:
