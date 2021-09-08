@@ -1323,6 +1323,7 @@ footer{
     #nav_nos_hebergements {
       font-weight: normal;
       padding-top: 40px;
+    }
   #assistance{
     display:flex;
     flex-direction: column;
