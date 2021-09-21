@@ -173,7 +173,7 @@ title{
   justify-content: center;
   align-items: center;
   border-radius: 25px;
-  background-color: #f2f2f2;
+  background-color:  #DEEBFF;
   height: 50px;
   width: 50px;
   color:#0065fc;
@@ -312,7 +312,10 @@ title{
   padding: 15px 0 10px 10px;
 }
 .card1_star1, .card1_star2, .card1_star3, .card1_star4{
-  color:#0065fc
+  color:#0065fc;
+}
+.card1_star5{
+  color: #f2f2f2;
 }
 .lodging_car_star2{
   display: flex;
@@ -328,12 +331,18 @@ title{
 .card3_star1, .card3_star2, .card3_star3, .card3_star4{
   color:#0065fc
 }
+.card3_star5{
+  color:#f2f2f2;
+}
 .lodging_car_star4{
   display: flex;
   padding: 15px 0 10px 10px;
 }
 .card4_star1, .card4_star2, .card4_star3{
   color:#0065fc
+}
+.card4_star4, .card4_star5{
+  color: #f2f2f2;
 }
 .lodging_car_star5{
   display: flex;
@@ -347,7 +356,7 @@ title{
   padding: 15px 0 10px 10px;
 }
 .card6_star1, .card6_star2, .card6_star3, .card6_star4, .card6_star5 {
-  color:#0065fc
+  color:#0065fc;
 }
 
 #legend_lodging a{
@@ -465,9 +474,13 @@ title{
 .pop2_star1, .pop2_star2, .pop2_star3, .pop2_star4{
   color:#0065fc;
 }
+.pop2_star5, .pop3_star5{
+  color:#f2f2f2;
+}
 .pop3_star1, .pop3_star2, .pop3_star3, .pop3_star4{
   color:#0065fc
 }
+
 
 
 /*ACTIVITY*/
@@ -754,9 +767,14 @@ footer{
 
 
 /*RESPONSIVE*/
-@media  screen and (min-width:769px) and (max-width:1024px){
+@media  screen and (min-width:501px) and (max-width:950px){
   nav #ul_nav{
     margin-right: 0px;
+  
+  }
+  #subscribe{
+    display: flex;
+  
   }
   #search{
     display:flex;
@@ -847,7 +865,7 @@ footer{
   
 
 
-@media screen and (max-width:768px){
+@media screen and (max-width:500px){
   body{
     width:100%;
   }
@@ -973,6 +991,7 @@ footer{
   #input{
     display: flex;
     font-size: 15px;
+    width:100%;
   }
   
   #submit_input_respons{
@@ -997,15 +1016,18 @@ footer{
   /*FILTERS*/
   
   #filter_title{
-    margin:0 0 20px 0;
+    margin:0 0 20px 15px;
     width:100%;
 
+  }
+  #filters_contains{
+    margin: 30px 0px 43px 25px;
   }
   #filter_eco, #filter_fam, #filter_rom, #filter_anim{
     display: flex;
     margin:7px 0;
     font-size: 15px;
-    margin-left: 10px;
+    margin-left: 5px;
   }
   /*LEGEND*/
   #informations{
@@ -1014,7 +1036,7 @@ footer{
     max-width: 100%;
   }
   #filter_legend{
-    margin:0px 0px 0 20px; 
+    margin:0px 0px 0 25px; 
   }
   
   /*LODGING-POPULAR*/
@@ -1290,35 +1312,34 @@ footer{
   footer{
     display: flex;
     background-color: #f2f2f2;
-    justify-content: center;
-    align-items: center;
+    justify-content:left;
+    align-items:flex-start;
     
   }
   nav #a_propos{
     font-weight: normal;
     display: flex;
     flex-direction: column;
+   
   
   }
   #fonctionnement, #charte, #aide, #données{
     display: flex;
-    justify-content: center;
+    
   }
   #conditions, #soumettre, #contact{
     display: flex;
-    justify-content: center;
+    
   }
   #a_propos{
     display: flex;
-    justify-content: center;
-    align-items: center;
   }
   #navigation{
     display:flex;
     flex-direction: column;
     justify-content: space-around;
     width: 100%;
-    align-items: center;
+    padding-left: 30px;
     }
     #nav_nos_hebergements {
       font-weight: normal;
@@ -1328,14 +1349,10 @@ footer{
     display:flex;
     flex-direction: column;
     width: 100%;
-    align-items: center;
-    justify-content: center;
     }
   #assistance_title{
     display: flex;
     justify-content: center;
-    align-items: center;
-    padding:0;
     padding-bottom: 10px;
   }
   #nav_assistance{
@@ -1343,7 +1360,7 @@ footer{
     justify-content: center;
     align-items: center;
     padding-top: 10px;
-    padding-left: 0;
+
    
     }
   
